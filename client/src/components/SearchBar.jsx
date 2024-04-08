@@ -12,7 +12,7 @@ const SearchBar = () => {
         setInputText(e.target.value);
         console.log(inputText)
         if (inputText.length > 0)
-            await fetch(`https://movie-api-tan-theta.vercel.app/api/find/${inputText.toLowerCase().trim()}`)
+            await fetch(`https://netdb-api.vercel.app/api/find/${inputText.toLowerCase().trim()}`)
                 .then(res => res.json())
                 .then(data => setResult(data))
                 .catch(err => console.log(err))

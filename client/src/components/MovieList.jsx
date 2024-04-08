@@ -5,7 +5,7 @@ const MovieList = () => {
     const { page } = useParams();
     const [movies, setMovies] = useState([]);
     const [count, setCount] = useState(0);
-    const baseURL = 'https://movie-api-tan-theta.vercel.app/api';
+    const baseURL = 'https://netdb-api.vercel.app/api';
     useEffect(() => {
         fetch(`${baseURL}/titles/${page}`)
             .then(res => res.json())

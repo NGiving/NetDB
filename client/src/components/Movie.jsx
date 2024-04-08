@@ -8,7 +8,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Movie = () => {
     const [data, setData] = useState(null);
     const { id } = useParams();
-    const baseURL = 'https://movie-api-tan-theta.vercel.app/api/title';
+    const baseURL = 'https://netdb-api.vercel.app/api/title';
     useEffect(() => {
         fetch(`${baseURL}/${id}`)
             .then(res => res.json())
